@@ -5,7 +5,191 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
+<style>
+
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins';
+    box-sizing: border-box;
+}
+
+.title {
+
+    padding: 10px;
+    display:grid;
+    place-items:center; 
+}
+
+.container {
+    display:flex;
+    justify-content: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.buff, .chicken, .veg {
+    width:400px;
+    position:relative;
+}
+.buff{
+    border: 2px solid black;
+    padding: 5px;
+    background-color:#a28089;
+    margin-right: 10px;
+    margin-left: 20px;
+}
+
+.chicken{
+    border: 2px solid black;
+    padding: 5px;
+    background-color:#a28089;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.veg{
+    border: 2px solid black;
+    padding: 5px;
+    background-color:#a28089;
+    margin-right: 20px;
+    margin-left: 10px;
+}
+
+.btitle, .ctitle, .vtitle{
+    height: 30px;
+    width: 250px;
+    font-size: 20px;
+    position: absolute;
+    right:0;
+    margin-right: 10px;
+    border: 2px solid black;
+    display:grid;
+    place-items:center; 
+}
+
+.btitle{
+    background-color: #e5eaf5;
+}
+
+.ctitle{
+    background-color: #d0bdf4;
+}
+
+.vtitle{
+    background-color: #8458B3;
+}
+
+.content{
+    margin-top: 40px;
+}
+
+/********** Large devices only **********/
+@media (min-width: 992px){
+  .col-lg-1 {
+    width: 8.33%;
+  }
+  .col-lg-2 {
+    width: 16.66%;
+  }
+  .col-lg-3 {
+    width: 25%;
+  }
+  .col-lg-4 {
+    width: 33.33%;
+  }
+  .col-lg-5 {
+    width: 41.66%;
+  }
+  .col-lg-6 {
+    width: 50%;
+  }
+  .col-lg-7 {
+    width: 58.33%;
+  }
+  .col-lg-8 {
+    width: 66.66%;
+  }
+  .col-lg-9 {
+    width: 74.99%;
+  }
+  .col-lg-10 {
+    width: 83.33%;
+  }
+  .col-lg-11 {
+    width: 91.66%;
+  }
+  .col-lg-12 {
+    width: 100%;
+  }
+}
+
+/********** Medium devices only **********/
+@media (min-width: 768px) and (max-width: 991px){
+  .col-md-1 {
+    width: 8.33%;
+  }
+  .col-md-2 {
+    width: 16.66%;
+  }
+  .col-md-3 {
+    width: 25%;
+  }
+  .col-md-4 {
+    width: 33.33%;
+  }
+  .col-md-5 {
+    width: 41.66%;
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+  .col-md-7 {
+    width: 58.33%;
+  }
+  .col-md-8 {
+    width: 66.66%;
+  }
+  .col-md-9 {
+    width: 74.99%;
+  }
+  .col-md-10 {
+    width: 83.33%;
+  }
+  .col-md-11 {
+    width: 91.66%;
+  }
+  .col-md-12 {
+    width: 100%;
+  }
+}
+
+/********For small device only**********/
+@media (min-width: 768px) and (max-width: 991px){
+  .col-md-12 {
+    width: 100%;
+  }
+}
+
+</style>
+
 <body>
-    <h1> Hello Coursera! </h1>
+    <h1 class="title">Our Menu</h1>
+    <div class="container">
+        <div class="buff col-lg-4 col-md-6 col-sm-12">
+            <div class="btitle">Buff MOMO</div>
+            <div class="content">For savory Chicken Momos, begin by mixing minced chicken with finely chopped onions, garlic, ginger, and a blend of spices in a large bowl. Let the mixture cool for 20-30 minutes. Meanwhile, prepare the dough by kneading plain flour, salt, and oil with warm water. After 3-4 hours of resting, divide the dough into small balls, roll out thin rounds, and fill them with the seasoned chicken mixture. Shape and steam the momos for 5-7 minutes. Serve these delectable chicken momos hot, accompanied by a side of spicy momo ko achar.</div>
+        </div>
+        <div class="chicken col-lg-4 col-md-6 col-sm-12">
+            <div class="ctitle">Chicken MOMO</div>
+            <div class="content">For flavorful Buff (beef) Momos, create a dough by combining plain flour, salt, and oil, kneading it with warm water. Allow the dough to rest for several hours, then divide it into small balls. Roll out thin rounds and use them to encase a well-seasoned minced buffalo meat mixture. Shape the momos and steam for 5-7 minutes until cooked through. Enjoy these hearty buffalo momos with a side of spicy dipping sauce for a satisfying culinary experience.</div>
+        </div>
+        <div class="veg col-lg-4 col-md-6 col-sm-12">
+            <div class="vtitle">Veg MOMO</div>
+            <div class="content">For a delightful vegetarian option, prepare Veg Momos by combining finely chopped vegetables like cabbage, carrots, and bell peppers in a bowl. Add minced garlic, ginger, and a mix of spices to enhance the flavor. Let the vegetable mixture rest for 20-30 minutes. Knead a dough with plain flour, salt, and oil, and let it rest for 3-4 hours. Divide the dough into small balls, roll out thin rounds, and fill them with the vegetable mixture. Shape and steam the momos for 5-7 minutes. Serve these flavorful veg momos with a side of dipping sauce for a tasty meatless alternative.</div>
+        </div>
+    </div>
 </body>
 </html>
