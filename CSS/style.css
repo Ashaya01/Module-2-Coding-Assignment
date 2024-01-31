@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 h1 {
-    margin-bottom: 15px;
+
     padding: 10px;
     display:grid;
     place-items:center;
